@@ -115,10 +115,10 @@ public func UIColorFromRGB(rgbValue: UInt) -> UIColor {
     )
 }
 
-public func stringFromDate(date: NSDate, format: String) -> String {
+public func stringFromDate(date: Date, format: String) -> String {
     let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = format
-    return dateFormatter.string(from: date as Date)
+    return dateFormatter.string(from: date)
 }
 
 public func dateFromString(date: String, format: String) -> Date {
